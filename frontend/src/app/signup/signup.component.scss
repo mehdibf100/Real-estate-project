@@ -1,0 +1,82 @@
+.h2 {
+  color: #100164;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  src: local("Segoe UI Bold");
+  line-height: 2rem;
+}
+.h6 {
+  color: #999999;
+  padding-top: 15px;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  src: local("Segoe UI Semibold");
+  font-size: 15px;
+
+}
+
+.link {
+  text-decoration: none;
+  color: #016450;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  src: local("Segoe UI Bold");
+  margin-left: 5px;
+}
+.pad {
+  padding-top: 110px;
+}
+.btncolor {
+  background-color: #3e0164;
+  font-weight: bold;
+  color: #ffffff;
+}
+.lsp {
+  letter-spacing: 2.5px;
+}
+.weig1 {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  src: local("Segoe UI Semibold");
+}
+.weig2 {
+  font-family: "Segoe UI";
+  font-weight: 400;
+  src: local("Segoe UI");
+}
+
+.pd {
+  padding-right: 3rem;
+  background-color: #ebebeb;
+}
+.brad {
+  border-radius: 10px;
+}
+.form-control::placeholder {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  src: local("Segoe UI Semibold");
+  color: #cacaca;
+  opacity: 1;
+}
+
+// Form Control Styling
+.form-control {
+  &:focus {
+    border-color: #80bdff; // example focus color
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); // example focus shadow
+  }
+}
+
+// Alert Styling
+.alert {
+  &.alert-danger {
+    background-color: #f8d7da; // example danger background color
+    border-color: #f5c6cb; // example danger border color
+    color: #721c24; // example danger text color
+  }
+}
+
+.small-label {
+  font-size: 0.1rem; /* Adjust the size as needed */
+}

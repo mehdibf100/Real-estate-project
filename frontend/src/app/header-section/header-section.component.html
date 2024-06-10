@@ -1,0 +1,55 @@
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../assets/bg.jpg" class="d-block w-100" alt="...">
+
+      <div class="carousel-caption-overlay">
+        <h1>For Brokers In Tunisia That Collects All Primary Inventory From Developers.</h1>
+        <button class="b">EXPLORE</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <form >
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center mt-5">
+        <form class="search-i">
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <input type="text" class="form-control" placeholder="Search for properties">
+            </div>
+            <div class="col-md-4 mb-3">
+              <select class="form-select" aria-label="Select Property Type">
+                <option selected>Property Type</option>
+                <option value="1">Apartment</option>
+                <option value="2">House</option>
+                <option value="3">Condo</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <select [(ngModel)]="Location" [ngModelOptions]="{standalone: true}" class="form-select" aria-label="Select Location">
+                <option selected>Location</option>
+                <option value="1">City</option>
+                <option value="2">Suburb</option>
+                <option value="3">Rural</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <select [(ngModel)]="prix" (change)="Prix()" [ngModelOptions]="{standalone: true}" class="form-select" aria-label="Select Price Range">
+                <option selected>Price</option>
+                <option value=10000>$100,000 - $200,000</option>
+                <option value=20000>$200,000 - $300,000</option>
+                <option value=30000>$300,000 - $400,000</option>
+              </select>
+            </div>
+            <div class="search">
+              <button  style="color: aliceblue;font-size: 15px;" class="b w-100" type="button">SEARCH</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>

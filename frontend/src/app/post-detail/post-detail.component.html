@@ -1,0 +1,37 @@
+<app-navbar-for-all-pages/><br><br>
+<div class="card-wrapper">
+  <div class="card">
+    <!-- card left -->
+    <div class="product-imgs">
+      <div class="img-display">
+        <div #imgShowcase class="img-showcase">
+          <img *ngFor="let image of images; let i = index" [src]="'http://localhost:8090/post/uploads/' + image" class="img-fluid" [alt]="'shoe image ' + (i + 1)" (click)="selectImage(i + 1)">
+
+        </div>
+      </div>
+      <div class="img-select">
+        <div class="img-item" *ngFor="let image of images; let i = index">
+          <a (click)="selectImage(i + 1)">
+            <img [src]="'http://localhost:8090/post/uploads/' + image" class="img-thumbnail" [alt]="'shoe image ' + (i + 1)">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- card right -->
+    <div >
+          <div class="row w-25  justify-content-start align-items-center"> <img class="w-50" src="data:image/png;base64,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" alt="">
+            {{ user.username}}
+          </div>
+          <h4>Numero de téléphone</h4>
+          <h4>24961175</h4>
+          <div class="h-25">
+          <a href="https://wa.me/24961175?text=Bonjour%20!" class="btn btn-success w-25">Contacter via WhatsApp</a><br>
+          <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to={{ user.email }}&su=Demande%20de%20disponibilité%20de%20maison" target="_blank" class="btn btn-secondary h-25 w-25 mt-3">Contact par e-mail</a>
+        </div>
+          <h1>{{ post.title }}</h1>
+      <p>{{ post.description }}</p>
+      <p>{{ post.prix }} TND</p>
+      <p>{{ post.user_id }} TND</p>
+    </div>
+    </div>
+  </div>
